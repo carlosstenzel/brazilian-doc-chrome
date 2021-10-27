@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="painel.css" />
+  </head>
+  <body>
+    <div class="box">
+      <form name="form_main">
+        <label for="numero">Number:</label><br />
+        <input name="numero" id="numero" size="20" type="text" />
+        <button id="copyNumber">Copy</button><br /><br />
+        Type:
+        <input
+          name="tipo"
+          value="cpf"
+          id="cpf"
+          checked="checked"
+          type="radio"
+        />
+        <label for="cpf">CPF</label>
+        <input name="tipo" value="cnpj" id="cnpj" type="radio" />
+        <label for="cnpj">CNPJ</label>
+
+        <br />
+        <br />
+        <input name="mascara" value="mascara" id="mascara" type="checkbox" />
+        <label for="mascara">Mask</label><br /><br />
+        <button onclick="gera()">Create</button>
+      </form>
+    </div>
+
+    <script src="sidebar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "Brazilian Document - Test ",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Generates a random CPF/CPNJ to be used in testing",
+  "icons": {
+    "48": "icons/brazilian-doc.png",
+    "128" : "128.png"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "scripting"
+  ],
+
+  "action": {
+    "default_icon": {
+      "48": "icons/brazilian-doc-80.png"
+    },
+    "default_popup": "sidebar.html"
+  }
+}
